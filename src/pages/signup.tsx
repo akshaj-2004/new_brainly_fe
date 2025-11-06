@@ -2,10 +2,9 @@ import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { AuthLayout } from "../components/layout/AuthLayout";
 
-import dotenv from "dotenv"
-dotenv.config()
 
-const BACKEND_URL = process.env.BACKEND_URL || ""
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 
 interface SignupProps {
   setIsAuthenticated: (value: boolean) => void;

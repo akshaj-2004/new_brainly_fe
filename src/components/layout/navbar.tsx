@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 interface NavbarProps {
   onAddContentClick: () => void;
   onSearch: (query: string) => void;
-  onLogout: () => void; // 👈 added this
+  onLogout: () => void; 
 }
 
 export const Navbar: React.FC<NavbarProps> = ({
@@ -29,7 +29,7 @@ export const Navbar: React.FC<NavbarProps> = ({
 
   const handleLogout = () => {
     onLogout();
-    navigate("/"); // 👈 navigate to landing
+    navigate("/"); 
   };
 
   return (

@@ -3,14 +3,13 @@ import { Sidebar } from "./sidebar";
 import { Navbar } from "./navbar";
 import { AddContentModal } from "../content/addContentModel";
 import { ContentCard } from "../content/contentcard";
-import dotenv from "dotenv"
-dotenv.config()
 
-const BACKEND_URL = process.env.BACKEND_URL || ""
+const BACKEND_URL = import.meta.env.VITE_BACKEND_URL;
+
 
 interface MainLayoutProps {
   children?: ReactNode;
-  setIsAuthenticated: React.Dispatch<React.SetStateAction<boolean>>; // 👈 added this
+  setIsAuthenticated: React.Dispatch<React.SetStateAction<boolean>>; 
 }
 
 interface ContentItem {

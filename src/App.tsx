@@ -21,7 +21,6 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        {/* Landing */}
         <Route
           path="/"
           element={
@@ -32,8 +31,6 @@ function App() {
             )
           }
         />
-
-        {/* Auth Pages */}
         <Route
           path="/signin"
           element={
@@ -55,7 +52,6 @@ function App() {
           }
         />
 
-        {/* Protected Dashboard */}
        <Route
   path="/dashboard"
   element={

@@ -7,7 +7,6 @@ export const Landing: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-indigo-50 to-white flex flex-col">
-      {/* Navbar */}
       <header className="flex justify-between items-center px-6 md:px-12 py-6 border-b border-gray-100">
   <div 
     onClick={() => navigate("/dashboard")} 
@@ -24,8 +23,6 @@ export const Landing: React.FC = () => {
   </button>
 </header>
 
-
-      {/* Hero Section */}
       <main className="flex flex-col items-center text-center px-6 md:px-12 mt-16">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -67,7 +64,6 @@ export const Landing: React.FC = () => {
         </motion.div>
       </main>
 
-      {/* Features Section */}
       <section className="mt-24 px-6 md:px-12 grid md:grid-cols-3 gap-8 max-w-6xl mx-auto mb-24">
         <FeatureCard
           icon={<Link2 className="w-8 h-8 text-indigo-600" />}
@@ -86,7 +82,7 @@ export const Landing: React.FC = () => {
         />
       </section>
 
-      {/* Footer */}
+
       <footer className="border-t border-gray-100 text-center py-6 text-sm text-gray-500">
         © {new Date().getFullYear()} Brainly
       </footer>
