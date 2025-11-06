@@ -42,7 +42,7 @@ export const Signup: React.FC<SignupProps> = ({ setIsAuthenticated }) => {
 
       localStorage.setItem("token", loginData.token);
       setIsAuthenticated(true);
-      navigate("/dashboard");
+      navigate("/signin");
     } catch {
       alert("Error creating account!");
     }

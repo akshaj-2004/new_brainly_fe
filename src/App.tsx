@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useState, useEffect } from "react";
 import { Landing } from "./pages/landing";
-import { Signin } from "./pages/sigin";
+import { Signin } from "./pages/signin";
 import { Signup } from "./pages/signup";
 import { Dashboard } from "./pages/dashboard";
 ;

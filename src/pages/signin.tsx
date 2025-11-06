@@ -70,7 +70,7 @@ export const Signin: React.FC<SigninProps> = ({ setIsAuthenticated }) => {
         <p className="text-sm text-center text-gray-600 mt-4">
           Don’t have an account?{" "}
           <span
-            onClick={() => navigate("/signup")}
+            onClick={() => navigate("/dashboard")}
             className="text-indigo-600 font-medium cursor-pointer hover:underline"
           >
             Sign up
