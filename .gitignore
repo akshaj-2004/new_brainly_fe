@@ -44,6 +44,4 @@ Thumbs.db
 *.swp
 *.lock
 
-# Optional: debug or test coverage
-coverage/
-*.lcov
+
